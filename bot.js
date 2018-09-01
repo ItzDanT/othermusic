@@ -17,8 +17,8 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
  
  
  
- const prefix = "*"
 client.on('message', async msg => { 
+	var prefix = "*";
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
 	const args = msg.content.split(' ');
